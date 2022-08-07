@@ -1,0 +1,589 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #FFFDF5; 
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFDF5;
+}
+
+
+header img {
+    margin-left: 40px;
+}
+
+
+nav {
+    margin-left: 170px;
+    margin-top: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #585757;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+.thumbs {
+    position: relative;
+    margin-left: 10px;
+}
+
+.thumbs img {
+    width: 55px;
+    border-radius: 50%;
+    background: #E7332B;
+    outline-color: #E7332B;
+    outline-style: solid;
+    outline-width: 13px;
+}
+
+.thumbs button {
+    background-color: #E7332B;
+    margin-left: 12px;
+    color: #fff;
+    border-radius: 25px;
+    white-space: nowrap;
+    padding: 9px 32px;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    margin-left: -13px;
+    z-index: -1;
+    text-align: center;
+    border: none;
+}
+
+.pictures {
+    margin: 200px auto;
+    display: flex;
+}
+
+.pictures .girl{
+    width: 28%;
+    height: 30%;
+    margin-top: 80px;
+    position: relative;
+    left: 58px;
+}
+
+.pictures .boy {
+    width: 25%;
+    height: 20%;
+    margin-right: 65px;
+    margin-top: 53px;
+}
+
+.writing {
+    text-align: center;
+    position: relative;
+}
+
+.writing h4 {
+    color: orangered;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.writing h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0.00938em;
+    margin-top: 8px;
+}
+
+.writing p {
+    width: 70%;
+    margin-left: 70px;
+    font-size: 18px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #1b1a20;
+    letter-spacing: 0.00938em;
+}
+
+.writing img { 
+    position: absolute;
+    width: 30%;
+}
+
+
+.writing .one  {
+    top: 197px;
+    left: 304px;
+}
+
+.writing button {
+    background-color: #E7332B;
+    color: #fff;
+    border-radius: 25px;
+    padding: 9px 32px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin-top: 40px;
+}
+
+.writing .two {
+    right: 420px;
+    top: 365px;
+    height: 65px;
+}
+
+.writing .three {
+    height: 120px;
+    right: 115px;
+    top: 387px;
+}
+
+.ruler {
+    margin: 10px auto;
+}
+
+.ruler  hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-content {
+    display: flex;
+    margin: 0 auto;
+    height: 37vh;
+    width: 100%;
+}
+
+.text-content p {
+    margin: 0 auto;
+}
+
+.text-content .one {
+    font-size: 25px;
+    word-spacing: 0.00938em;
+    font-weight: bold;
+    margin-top: 70px;
+    width: 29%;
+}
+
+.text-content img {
+    height: 200px;
+}
+
+.text-content .two {
+    text-align: right;
+    font-size: 24px;
+    margin-top: 28px;
+    width: 28%;
+}
+
+.text-content span {
+    color: #585757;
+    text-decoration: underline;
+}
+
+.ziz-zag {
+    margin: 49px auto;
+    width: 89%;
+}
+
+.ziz-zag .one {
+    font-size: 23px;
+    color: #E7332B;
+}
+
+.ziz-zag img {
+    height: 80px;
+    margin-left: 300px;
+}
+
+.star {
+    display: flex;
+}
+
+.star p {
+    font-size: 35px;
+    width: 48%;
+    line-height: 130%;
+    font-weight: 700;
+    letter-spacing: 00.00938em;
+}
+
+.star img {
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+.cards {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.first-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-one {
+    background-color: #E7332B;
+    border: none;
+    padding: 60px 45px 90px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    border-radius: 18px;
+    position: relative;
+    width: 33%;
+    color: #fff;
+}
+
+.first-one:hover {
+    margin-top: -15px;
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.box {
+    background-color: #fff;
+    border: none;
+    padding: 60px 45px 90px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    border-radius: 18px;
+    position: relative;
+    width: 33%;
+    color: black;
+}
+
+.first-cards img {
+    height: 135px;
+    position: absolute;
+}
+
+.number {
+    font-size: 60px;
+}
+
+.write {
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+.line {
+    font-size: 18px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.first-one .white {
+    top: -1px;
+    left: 250px;
+}
+
+.second-one {
+    background-color: #fff;
+    border: none;
+    padding: 60px 45px 60px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    border-radius: 18px;
+    position: relative;
+    width: 33%;
+    color: black;
+    margin-left: 25px;
+}
+
+.second-one:hover {
+    margin-top: -15px;
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.second-one .yellow {
+    top: -1px;
+    left: 250px;
+}
+
+.second-one .green {
+    top: -1px;
+    left: 250px;
+}
+
+.second {
+    margin-top: 30px;
+}
+
+.glasses {
+    background-color: #E7332B;
+    margin-top: 150px;
+    display: flex;
+    padding: 90px 80px 30px 90px;
+}
+
+
+.glasses-text .curl {
+    height: 60px;
+    margin-left: 270px;
+    margin-bottom: -25px;
+}
+
+.glasses-text .first {
+    font-size: 18px;
+    color: #fff;
+}
+
+.glasses-text span {
+    font-size: 40px;
+    color: #fff;
+    width: 20%;
+    font-weight: 700;
+}
+
+.glasses-text .third {
+    color: white;
+    font-size: 18px;
+    width: 75%;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.glasses-text button {
+    background-color: #fff;
+    color: #E7332B;
+    border-radius: 25px;
+    padding: 8px 32px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin-top: 30px; 
+}
+
+.border {
+    margin-top: 40px;
+}
+
+.border-one {
+    display: flex;
+}
+
+.border-two {
+    display: flex;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.glasses-text .dots {
+    height: 90px;
+    margin-top: 40px;
+    margin-left: -50px;
+}
+
+.con {
+    display: inline-flex;
+    border: 2px solid white;
+    padding: 10px 50px 10px 15px;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    width: 45%;
+    font-weight: 500;
+    height: fit-content;
+}
+
+.con img {
+    height: 50px;
+}
+
+.con p {
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.un {
+    margin-left: 20px;
+}
+
+.glasses-picture img {
+    height: 570px;
+}
+
+.row-one {
+    display: flex;
+}
+
+.spec {
+   padding: 60px 60px; 
+}
+
+.spec .top {
+    font-size: 20px;
+    color: #E7332B;
+    margin-bottom: -45px;
+}
+
+.string {
+    display: flex;
+    justify-content: center;
+}
+
+.string img {
+    height: 140px;
+}
+
+.spec span {
+    color: #1b1a20;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    padding: 50px 20px 30px 40px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    border-radius: 45px;
+    position: relative;
+    width: 50%;
+    color: black;
+    margin-left: 20px;
+}
+
+.card .head {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card img {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.card .desc {
+    width: 100%;
+    margin-top: 30px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.row-two {
+    margin-top: 20px;
+    display: flex;
+}
+
+.dev-op-logo img {
+    height: 40px;
+}
+
+
+.string button {
+    background-color: #E7332B;
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 32px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin-top: 70px; 
+}
+
+.answers hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.answers img {
+    width: 130px;
+    margin-left: 230px;
+    margin-bottom: -35px;
+}
+
+.intro {
+    margin: 0 auto;
+}
+
+.intro .ask{
+    text-align: center;
+}
+
+.intro .got {
+    font-size: 20px;
+    color: #E7332B;
+    font-weight: 700;
+}
+
+.intro .fre {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.questions {
+    margin: 90px auto;
+    width: 80%;
+}
+
+.case {
+    display: flex;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1.5px solid gray;
+    padding: 30px 10px;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.case .last {
+    border-bottom: 1px solid gray;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.more button {
+    background-color: #E7332B;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 32px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    margin-left: 10px; 
+    font-weight: 500;
+}
+
+.more .twitter {
+    margin-right: 8px;
+}
+
+.more p {
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 500;
+}
