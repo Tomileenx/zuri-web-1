@@ -9,7 +9,6 @@ body {
     background-color: #FFFDF5; 
     margin: 0 auto;
     overflow-x: hidden;
-    position: relative;
 }
 
 header {
@@ -22,11 +21,12 @@ header {
     left: 0;
     width: 100%;
     background-color: #FFFDF5;
+    justify-content: center;
 }
 
 
 header img {
-    margin-left: 40px;
+    margin-left: -100px;
 }
 
 
@@ -46,7 +46,7 @@ a {
 
 .thumbs {
     position: relative;
-    margin-left: 10px;
+    margin-left: 150px;
 }
 
 .thumbs img {
@@ -76,16 +76,18 @@ a {
 }
 
 .pictures {
-    margin: 200px auto;
+    margin: 150px auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 .pictures .girl{
     width: 28%;
     height: 30%;
-    margin-top: 80px;
-    position: relative;
-    left: 58px;
+    margin-top: -25px;
+    margin-right: -48px;
 }
 
 .pictures .boy {
@@ -97,7 +99,7 @@ a {
 
 .writing {
     text-align: center;
-    position: relative;
+    margin-top: 30px;
 }
 
 .writing h4 {
@@ -115,10 +117,10 @@ a {
 }
 
 .writing p {
-    width: 70%;
+    width: 75%;
     margin-left: 70px;
     font-size: 18px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -128,14 +130,12 @@ a {
 }
 
 .writing img { 
-    position: absolute;
     width: 30%;
 }
 
-
-.writing .one  {
-    top: 197px;
-    left: 304px;
+.one  {
+    margin-left: 219px;
+    margin-top: 5px;
 }
 
 .writing button {
@@ -149,20 +149,22 @@ a {
     margin-top: 40px;
 }
 
-.writing .two {
-    right: 420px;
-    top: 365px;
+.small-img-text .two {
     height: 65px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -45px;
 }
 
-.writing .three {
+.small-img-text .three {
     height: 120px;
-    right: 115px;
-    top: 387px;
+    margin-left: 160px;
+    margin-top: -25px;
 }
 
 .ruler {
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 .ruler  hr {
@@ -173,8 +175,10 @@ a {
 .text-content {
     display: flex;
     margin: 0 auto;
-    height: 37vh;
+    height: auto;
     width: 100%;
+    justify-content: center;
+    padding: 13px;
 }
 
 .text-content p {
@@ -185,7 +189,7 @@ a {
     font-size: 25px;
     word-spacing: 0.00938em;
     font-weight: bold;
-    margin-top: 70px;
+    margin-top: 45px;
     width: 29%;
 }
 
@@ -196,7 +200,7 @@ a {
 .text-content .two {
     text-align: right;
     font-size: 24px;
-    margin-top: 28px;
+    margin-top: 10px;
     width: 28%;
 }
 
@@ -213,6 +217,7 @@ a {
 .ziz-zag .one {
     font-size: 23px;
     color: #E7332B;
+    margin-left: 0px;
 }
 
 .ziz-zag img {
@@ -237,15 +242,15 @@ a {
     margin: 0 auto;
 }
 
-
 .cards {
     width: 90%;
     margin: 0 auto;
 }
 
 .first-cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
 }
 
 .first-one {
@@ -254,8 +259,6 @@ a {
     padding: 60px 45px 90px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
     border-radius: 18px;
-    position: relative;
-    width: 33%;
     color: #fff;
 }
 
@@ -271,14 +274,20 @@ a {
     padding: 60px 45px 90px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
     border-radius: 18px;
-    position: relative;
-    width: 33%;
+    width: auto;
+    margin-top: 0px;
     color: black;
+}
+
+.box:hover {
+    cursor: pointer;
+    margin-top: -15px;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .first-cards img {
     height: 135px;
-    position: absolute;
+    float: right;
 }
 
 .number {
@@ -297,8 +306,8 @@ a {
 }
 
 .first-one .white {
-    top: -1px;
-    left: 250px;
+    margin-top: -61px;
+    margin-right: -46px;
 }
 
 .second-one {
@@ -307,39 +316,68 @@ a {
     padding: 60px 45px 60px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
     border-radius: 18px;
-    position: relative;
-    width: 33%;
+    width: auto;
     color: black;
-    margin-left: 25px;
+    margin-top: 0px;
 }
 
 .second-one:hover {
+    cursor: pointer;
+    margin-top: -15px;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.five {
+    margin-top: 20px;
+    background-color: #fff;
+    border: none;
+    padding: 60px 45px 60px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    border-radius: 18px;
+    position: relative;
+    width: auto;
+    color: black;
+    margin-top: 0px;
+}
+
+.five:hover {
     margin-top: -15px;
     cursor: pointer;
     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.second-one .yellow {
-    top: -1px;
-    left: 250px;
+ .second-one .yellow {
+    margin-top: -61px;
+    margin-right: -46px;
 }
 
 .second-one .green {
-    top: -1px;
-    left: 250px;
+    margin-top: -61px;
+    margin-right: -45px;
 }
 
-.second {
-    margin-top: 30px;
+.box .pink {
+    margin-top: -61px;
+    margin-right: -45px;
+}
+
+.five .light-green {
+    margin-top: -61px;
+    margin-right: -45px;
+}
+
+.five .blue {
+    margin-top: -61px;
+    margin-right: -45px;
 }
 
 .glasses {
     background-color: #E7332B;
     margin-top: 150px;
     display: flex;
-    padding: 90px 80px 30px 90px;
+    padding: 90px 80px 35px 90px;
+    justify-content: center;
 }
-
 
 .glasses-text .curl {
     height: 60px;
@@ -383,19 +421,16 @@ a {
 }
 
 .border-one {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: -25px;
 }
 
-.border-two {
-    display: flex;
-    white-space: nowrap;
-    margin-top: 20px;
-}
-
-.glasses-text .dots {
+.glasses-picture .dots {
     height: 90px;
-    margin-top: 40px;
-    margin-left: -50px;
+    margin-top: 110px;
+    display: flex;
+    margin-left: -570px; 
 }
 
 .con {
@@ -405,9 +440,14 @@ a {
     border-radius: 40px;
     color: white;
     font-size: 18px;
-    width: 45%;
+    width: 90%;
     font-weight: 500;
     height: fit-content;
+    white-space: nowrap;
+}
+
+.un {
+    margin-top: 25px;  
 }
 
 .con img {
@@ -417,10 +457,6 @@ a {
 .con p {
     margin-left: 10px;
     margin-top: 13px;
-}
-
-.un {
-    margin-left: 20px;
 }
 
 .glasses-picture img {
@@ -817,4 +853,253 @@ a {
 
 .links-logo .footer-links {
     margin-right: -35px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    
+    header img {
+        margin-left: -90px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    
+    
+    nav {
+        margin-left: 20px;
+    }
+     
+    .thumbs {
+        position: relative;
+        margin-left: 170px;
+    }
+    
+    .thumbs img {
+        width: 50px;
+        height: 50px;
+        margin-top: -2px;
+    }
+    
+    .thumbs button {   
+        top: 2px;
+    }
+
+    .pictures {
+        margin-top: 110px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pictures .girl{
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    .pictures .boy {
+        display: none;
+    }
+    
+    .writing {
+        text-align: center;
+        position: relative;
+    }
+    
+    .writing h4 {
+        color: orangered;
+        font-weight: lighter;
+        font-size: 18px;
+        margin-top: -50px;
+    }
+    
+    .writing h1 {
+        font-size: 50px;
+        margin-top: 8px;
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    .writing p {
+        width: 70%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+       
+    .writing .one  {
+        margin-right: -270px;
+        margin-top: -5px;
+    }
+    
+    .small-img-text .two {
+        margin-left: -60px;
+        margin-top: -10px;
+    }
+    
+    .small-img-text .three {
+        height: 130px;
+        margin-right: -160px;
+        margin-top: -55px;
+    }
+
+    .ruler {
+        margin: 10px auto;
+    }
+    
+    .ruler  hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .text-content {
+        display: flex;
+        margin: 0 auto;
+        height: 37vh;
+        width: 100%;
+    }
+    
+    .text-content p {
+        margin: 0 auto;
+    }
+    
+    .text-content .one {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+      
+    .text-content .two {
+        font-size: 19px;
+        margin-top: 35px;
+        width: 30%;
+    }
+
+    .first-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .first-one .white {
+        top: -1px;
+        left: 344px;
+    }
+      
+     .second-one .yellow {
+        top: -1px;
+        left: 344px;
+    }
+    
+    .second-one .green {
+        top: -1px;
+        left: 344px;
+    }
+    
+    .box .pink {
+        top: 0px;
+        left: 344px;
+    }
+    
+    .five .light-green {
+        top: 0px;
+        left: 344px;
+    }
+    
+    .five .blue {
+        top: 0px;
+        left: 344px;
+    }
+
+    .glasses {
+        background-color: #E7332B;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 90px 80px 30px 90px;
+        justify-content: center;
+    }
+    
+    .glasses-text .curl {
+        height: 150px;
+        margin-left: 605px;
+        margin-top: -30px;
+    }
+    
+    .glasses-text .first {
+        font-size: 18px;
+        color: #fff;
+    }
+    
+    .glasses-text span {
+        font-size: 30px;
+        color: #fff;
+        width: 100%;
+        font-weight: 700;
+    }
+    
+    .glasses-text .third {
+        color: white;
+        font-size: 18px;
+        width: 100%;
+        margin-top: 40px;
+        font-weight: 500;
+    }
+    
+    .glasses-text button {
+        background-color: #fff;
+        color: #E7332B;
+        border-radius: 25px;
+        padding: 8px 32px;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        margin-top: 30px; 
+    }
+    
+    .border {
+        margin-top: 40px;
+    }
+    
+    .border-one {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+     
+    .glasses-picture .dots {
+        height: 80px;
+        margin-left: -470px;
+        margin-top: 20px;
+    }
+    
+    .con {
+        display: inline-flex;
+        border: 2px solid white;
+        padding: 10px 50px 10px 15px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .con img {
+        height: 50px;
+    }
+    
+    .con p {
+        margin-left: 10px;
+        margin-top: 13px;
+    }
+    
+    .un {
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    
+    .glasses-picture img {
+        height: 950px;
+        width: 950px;
+        margin-top: 20px;
+    }
+    
+    
 }
